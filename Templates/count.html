@@ -1,0 +1,24 @@
+<h1> Contador </h1>
+
+<a href = "{% url 'home' %}"> Contar otro texto </a>
+
+<h2> Hay {{ count }} palabras en tu texto </h2>
+
+Texto original :
+{{ fulltext }}
+
+<br /> <br />
+
+Contador de palabras :
+
+<br />
+
+{% for word, counttotal in worddictionary %}
+
+    <b> {{ word }} </b>:
+
+    {{ counttotal }}
+
+    <br />
+
+{% endfor %}

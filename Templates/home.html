@@ -1,0 +1,31 @@
+<head>
+
+    <style>
+
+        a {
+
+            color: gray;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+
+            color: lightblue;
+
+        }
+
+    </style>
+
+</head>
+
+<H1> WELCOME TO HOMEPAGE </H1>
+
+<form action="{% url 'count' %}"> <!-- se escribe sin el html -->
+
+    <textarea cols = "40" rows = "5" name = "fulltext"> </textarea> <br />
+    <input type="submit" value = "Contar Palabras"> </input>
+
+</form>
+
+<a href="{% url 'acercaDe' %}"> Acerda de </a>
